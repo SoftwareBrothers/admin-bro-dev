@@ -9,7 +9,7 @@ AdminBro should give you the ability to manage records in all these resources.
 
 ## Adapters
 
-AdminBro uses Database Adapters in order to handle different kind of resources.
+AdminBro uses Database Adapters in order to handle different kinds of resources.
 
 ### How to use an adapter
 
@@ -26,7 +26,7 @@ AdminBro.registerAdapter(AdminBroMongoose)
 
 ## Passing resources to AminBro
 
-So you know how to register an adapter - now let's take a look of how to add resources that
+So you know how to register an adapter - now let's take a look at how to add resources that
 they can be seen in AdminBro.
 
 You have 2 options:
@@ -77,7 +77,7 @@ run()
 // ...
 ```
 
-Way how each Adapter handles initialization differs. That is why make sure to read it's documentation first.
+The Way how each Adapter handles initialization differs. That is why make sure to read it's documentation first.
 
 ## Resources customization
 
@@ -93,7 +93,7 @@ Adapter is an object with 2 properties:
 When you pass **SomeDataModel** to {@link AdminBroOptions#databases databases[]} or {@link AdminBroOptions#resources resources[]}, AdminBro will automatically run all the registered adapters and check
 their corresponding {@link BaseDatabase.isAdapterFor} or {@link BaseResource.isAdapterFor} methods. If Adapter returns `true` AdminBro feeds it (in the constructor) with **SomeDataModel**.
 
-In order to write your own adapter you have to create these 2 classes and write implementation for all
+In order to write your own adapter, you have to create these 2 classes and write the implementation for all
 methods like {@link BaseDatabase#find find}, {@link BaseDatabase#create create}, etc.
 
 HINT: You can also write only a **Resource** class (extending {@link BaseResource}) and pass its instance
@@ -115,7 +115,7 @@ const adminBro = new AdminBro({
 })
 ```
 
-AdminBro will see that what you passed is already a BaseDatabase so it wont need to be wrapped by an Adapter.
+AdminBro will see that what you passed is already a BaseDatabase so it won't need to be wrapped by an Adapter.
 
 ## What's next?
 

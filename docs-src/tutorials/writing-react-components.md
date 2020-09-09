@@ -4,7 +4,7 @@ For instance, you may want to show a _google map_ for _location_ fields, or even
 
 You can do this all by writing your custom components.
 
-## Example of overriding how dashboard looks:
+## Example of overriding how the dashboard looks:
 
 AdminBroOptions: 
 ```
@@ -46,7 +46,7 @@ Currently, there are 4 places where you can inject components to alter how Admin
 ## Requiring component
 
 First of all - you have to require them by using {@link AdminBro.bundle} function. What it does -
-it gives your component an unique ID and sends it to the __bundling__ process.
+it gives your component a unique ID and sends it to the __bundling__ process.
 
 You can do it like this: `{ component: AdminBro.bundle('./path-to-your-jsx-or-tsx-file') }`
 
@@ -121,7 +121,7 @@ const YourComponent (props) => {(
 )}
 ```
 
-> We divide components internally to 2 groups:
+> We divide components internally into 2 groups:
 > 
 > * _application components_ - which requires AdminBro, you can think about them as "smart components"
 > * and _design system components_ - they don't require AdminBro and you can use them outside of the AdminBro setup.
@@ -131,7 +131,7 @@ const YourComponent (props) => {(
 
 Each of the components is described with the playground option, so make sure to check out all the documentation of all the components.
 
-One of the most versatile component is a {@link BasePropertyComponent}. It allows you to render any property.
+One of the most versatile components is a {@link BasePropertyComponent}. It allows you to render any property.
 Combined with {@link useRecord} is a powerful tool for building forms.
 
 ## Theming
@@ -170,7 +170,7 @@ We use [styled-components](https://styled-components.com/) under the hood so mak
 
 ## Using other AdminBro frontend classes and objects
 
-AdminBro also exposes following classes:
+AdminBro also exposes the following classes:
 
 - {@link ApiClient}
 - {@link ViewHelpers}

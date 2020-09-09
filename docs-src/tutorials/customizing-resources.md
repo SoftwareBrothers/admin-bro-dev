@@ -23,7 +23,7 @@ const adminBroOptions = {
 ...
 ```
 
-> AdminBro will use defaults setting whey you wont pass any options.
+> AdminBro will use defaults setting when you won't pass any options.
 
 ## How a __Resource__ can be modified?
 
@@ -139,7 +139,7 @@ __Important notice about overriding xxxProperties__: both _{ propertyName.positi
 
 As I mentioned a **title** property goes first in the list of all properties, and in smaller screens, only this property stays. Also title property is the property on which you can search in autocomplete (by default).
 
-AdminBro tries to pick **title** property automatically. It is property with name "name" or "email". You can change this behavior by setting {@link PropertyOptions#isTitle} for default property to `false` and for the new property to `true`.
+AdminBro tries to pick **title** property automatically. It is property with name "name" or "email". You can change this behavior by setting {@link PropertyOptions#isTitle} for default property to `false` and the new property to `true`.
 
 ### { __[propertyName].type__ } of a property
 
@@ -252,7 +252,7 @@ To see all available options - check out the
 * {@link ResourceOptions} interface.
 * {@link PropertyOptions} interface.
 
-There is an another very important section in {@link ResourceOptions} - **actions**. It gives you the ability
+There is another very important section in {@link ResourceOptions} - **actions**. It gives you the ability
 to modify existing actions like `edit` or `delete` or add new **actions**. Go to the next tutorial: {@tutorial actions} to read more about them.
 
 You can also read more about creating your own components in this tutorial: {@tutorial writing-react-components}.

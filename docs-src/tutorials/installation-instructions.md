@@ -2,7 +2,7 @@
 > 
 > check out [this video tutorial](https://www.youtube.com/watch?v=n0IuXnL_cWs) which shows you how you can create an Admin Panel from scratch.
 
-Installation of an __AdminBro__ consist of 2 steps.
+Installation of an __AdminBro__ consists of 2 steps.
 
 ## 01. Install the framework plugin
 
@@ -14,8 +14,8 @@ There are plugins for:
 * {@link module:@admin-bro/hapi Hapi}
 * {@link module:@admin-bro/koa Koajs}
 
-In this tutorial I will present the simplest way of adding AdminBro to an express framework. If you
-want to launch AdminBro by other framework - see its documentation (above)
+In this tutorial, I will present the simplest way of adding AdminBro to an express framework. If you
+want to launch AdminBro by another framework - see its documentation (above)
 
 ### Express installation
 
@@ -57,9 +57,9 @@ app.listen(8080, () => console.log('AdminBro is under localhost:8080/admin'))
 
 > If you are adding AdminBro to an application which already has any other middleware, it is good to put the AdminBro setup on top.
 > 
-> This is because other middleware can transform **requests** so that AdminBro wont be able to handle it.
+> This is because other middleware can transform **requests** so that AdminBro won't be able to handle it.
 
-To see how to add an authentication or other modifications - visit the {@link module:@admin-bro/express Express Plugin} documentation.
+To see how to add authentication or other modifications - visit the {@link module:@admin-bro/express Express Plugin} documentation.
 
 ## 02. Install the Database Adapter and add resources
 
@@ -69,7 +69,7 @@ __AdminBro__ can be connected to many different types of resources. Right now we
 * {@link module:@admin-bro/sequelize Sequelize}
 * {@link module:@admin-bro/typeorm TypeORM}
 
-To add resources to __AdminBro__ you first have to **register adapter** for the resource you want to use.
+To add resources to __AdminBro__ you first have to **register an adapter** for the resource you want to use.
 
 Example for a mongoose setup:
 

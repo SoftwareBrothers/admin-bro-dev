@@ -78,7 +78,7 @@ export { feature }
 As you can see, in the example above, that you have to take care of merging previous options,
 which could be problematic.
 
-Fortunately AdminBro gives you the helper functions for that:
+Fortunately, AdminBro gives you the helper functions for that:
 
 - factory function {@link buildFeature}
 - and optional helper {@link mergeResourceOptions}, when you need more control.
@@ -103,4 +103,4 @@ const feature = buildFeature({
 We've just added **features** to admin-bro@3. On this page we will write all the things which we, or
 the community, will create.
 
-So let's create first feature!!!
+So let's create first the feature!!!

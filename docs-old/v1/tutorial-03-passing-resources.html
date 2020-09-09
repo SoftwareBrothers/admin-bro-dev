@@ -92,7 +92,7 @@ AdminBro should give you the ability to manage records in those resources.</p>
 <p>AdminBro uses different database adapters in order handle different kind of resources.</p>
 <h3>How to use an adapter</h3>
 <ol>
-<li>First, you have to install adapter localy using the <strong>npm/yarn</strong>.</li>
+<li>First, you have to install adapter locally using the <strong>npm/yarn</strong>.</li>
 <li>Next, you have to <strong>register this adapter</strong> using the <a href="AdminBro.html#.registerAdapter">AdminBro.registerAdapter</a>
 that AdminBro could recognize resources of its type.</li>
 </ol>
@@ -102,7 +102,7 @@ const AdminBroMongoose = require('admin-bro-mongoose')
 AdminBro.registerAdapter(AdminBroMongoose)
 </code></pre>
 <h2>Passing resources to AminBro</h2>
-<p>So you know how to regiser an adapter - now let's take a look of how to add resources that
+<p>So you know how to register an adapter - now let's take a look at how to add resources that
 they can be seen in AdminBro.</p>
 <p>You have 2 options:</p>
 <ol>
@@ -118,7 +118,7 @@ const AdminBroMongoose = require('admin-bro-mongoose')
 const mongoose = require('mongoose')
 AdminBro.registerAdapter(AdminBroMongoose)
 
-// Initializ Database along with models
+// Initialize Database along with models
 const User = mongoose.model('User', { name: String, email: String, surname: String })
 const Admin = mongoose.model('Admin', { name: String, email: String})
 
@@ -148,7 +148,7 @@ run()
 <li><a href="module-admin-bro-sequelizejs.html">admin-bro-sequelizejs</a> - adapter to <a href="http://sequelize.com">sequelize</a> for SQL Databases</li>
 </ul>
 <h2>Resources customization</h2>
-<p>Each resource could be customised in AdminBro - to see how to do this go to <a href="tutorial-04-customizing-resources.html">04. Customize resources</a></p>
+<p>Each resource could be customized in AdminBro - to see how to do this go to <a href="tutorial-04-customizing-resources.html">04. Customize resources</a></p>
 </article>
 
 </section>
